@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --partition=short       ### queue to submit to
+#SBATCH --job-name=myhostjob    ### job name
+#SBATCH --output=hostname.out   ### file in which to store job stdout
+#SBATCH --error=hostname.err    ### file in which to store job stderr
+#SBATCH --time=1                ### wall-clock time limit, in minutes
+#SBATCH --mem=1000M              ### memory limit, per cpu, in MB
+#SBATCH --nodes=1               ### number of nodes to use
+#SBATCH --ntasks-per-node=1     ### number of tasks to launch per node
+#SBATCH --cpus-per-task=1       ### number of cores for each task
+ 
+talapas-ln1.uoregon.edu
